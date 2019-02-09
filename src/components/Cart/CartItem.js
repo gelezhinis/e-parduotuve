@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 function CartItem({item, value}) {
 	const {img, title, id, price, total, count} = item;
@@ -7,7 +6,7 @@ function CartItem({item, value}) {
 	return (
 		 <div className="row my-2 text-capitalize text-center">
 		   <div className="col-10 mx-auto col-lg-2">
-		      <img src={img} alt="product" className="img-fluid" style={{width:'4rem', height:'4rem'}} />
+		      <img src={img} style={{width:"4rem", height:"4rem"}} classname="img-fluid" alt="product" />
 		   </div>
 		   <div className="col-10 mx-auto col-lg-2 mt-3">
 		      <span className="d-lg-none">product:</span>
