@@ -20,7 +20,7 @@ class Product extends Component {
 			 	  >
 			        <Link to="/details">
 			         <img src={img} alt="product" className="card-img-top px-10" 
-			          />
+			          /> ![]({img})
 			        </Link>
 			        <button className="cart-btn text-capitalize" disabled={inCart?true:false} 
 			             onClick={()=> {
@@ -89,8 +89,8 @@ const ProductWrapper = styled.div`
 }
 .card-img-top {
 	transition: all 0.6s linear;
-	width: 140px;
-	height: 140px;
+	width: "140px";
+	height: "140px";
 }
 .img-container:hover .card-img-top {
 	transform: scale(1.3);
